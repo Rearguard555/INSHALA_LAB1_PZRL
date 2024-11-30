@@ -24,3 +24,19 @@ void print_ans(int* res, int size){
         printf("Ответ №%d: %d\n", i+1, res[i]);
     }
 }
+void print_ans_str(int* res, int size, int k){
+    for (int i = 0; i < size; i++){
+        int symb = res[i] - k;
+        if (symb > 255 || symb < 0){
+            printf("ERROR: result %d is not in ASCII\n", i+1);
+            return;
+        }
+    }
+    printf("Результирующая строка: ");
+    for (int i = 0; i < size; i++){
+        int symb = res[i] - k;
+        printf("%c", symb);
+    }
+    printf("\n");
+}
+
