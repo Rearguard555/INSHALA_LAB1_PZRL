@@ -18,3 +18,9 @@ int get_ans(int l, int r, char o){
             printf("ERROR: unknown operator");
                 return INT_MIN;
     }
+
+void print_ans(int* res, int size){
+    for (int i = 0; i < size; i++){
+        printf("Ответ №%d: %d\n", i+1, res[i]);
+    }
+}
