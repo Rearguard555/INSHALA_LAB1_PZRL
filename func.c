@@ -38,5 +38,5 @@ void print_ans_str(int* res, int size, int k){
         printf("%c", symb);
     }
     printf("\n");
-}
+}}
 
